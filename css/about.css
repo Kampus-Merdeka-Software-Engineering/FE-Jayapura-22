@@ -1,0 +1,300 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7; /* Warna latar belakang keseluruhan halaman */
+    color: black; /* Warna teks utama */
+    margin-top: 80px;
+    padding: 0;
+    line-height: 1.7;
+    background: linear-gradient(to right,#55a3f1, #cfd8dd);
+    justify-content: center;
+
+}
+
+
+/* Style header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 8%;
+    background-color: #1E90FF;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.logo {
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    /* Membuat elemen anak berbaris secara horizontal */
+    align-items: center;
+    /* Mengatur vertikal align agar sejajar */
+    color: #ffffff;
+}
+
+.logo img {
+    width: 70px;
+    /* Ubah lebar sesuai yang Anda inginkan */
+    height: 70px;
+    /* Biarkan tinggi mengikuti proporsi asli gambar */
+}
+
+.logo-text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-right: 5px;
+    color: white;/* Warna isi teks */
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.896);/* Warna tepi tulisan */
+}
+
+.logo-subtext {
+    font-size: 15px;
+    color: white;
+    /* Warna isi teks */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    /* Warna tepi tulisan */
+}
+
+.home {
+    width: 100%;
+    height: 80vh;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 90px 15% 0;
+    justify-content: space-between;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'poppins', sans-serif;
+    margin-bottom: 50px;
+    
+}
+
+
+.home-sci a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    justify-content: center;
+    margin: 20px 0;
+    transition: transform 0.3s; /* Animasi saat ikon diberi hover */
+}
+
+.home-sci a:hover {
+    background: #1E90FF;
+    color: #264653;
+    transform: scale(1.12); /* Membesarkan ikon saat di-hover (1.2 adalah faktor skala yang bisa disesuaikan) */
+}
+
+.home-img {
+    border-radius: 50%;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    margin-left: 15px;
+    max-width: 50%;
+    margin-top: 20px; /* Atur margin atas agar tidak terlalu jauh dari konten */
+}
+
+
+
+
+.navbar a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 25px;
+}
+
+.navbar a.active,
+.navbar a:hover {
+    font-weight: bolder;
+    color: #0000CD;
+}
+
+/* Style dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.dropbtn {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 15px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1E90FF;
+    min-width: 160px;
+    z-index: 1;
+    padding: 10px 0;
+    border-radius: 20px;
+}
+
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
+    font-size: 16px;
+}
+
+.dropdown-content a:hover {
+    background-color: #1E90FF;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.hero {
+    text-align: center;
+    margin-top: 2px;
+    height: 70vh;
+    color: black;
+    /* Warna isi teks */
+    text-shadow: 2px 2px 4px rgba(254, 254, 254, 0.896);
+    /* Warna tepi tulisan *//
+}
+
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.wrapper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:transparent ;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.wrapper .icons{
+   text-align: center;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   flex-direction: column;
+   position: relative;
+   z-index: 2;
+   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+   object-position: center;
+   backdrop-filter: blur(5px);
+}
+
+.wrapper .icons span {
+    display: block;
+    height: 60px;
+    width: 60px;
+    background: transparent;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    color: #000;
+    margin-bottom: 10px; /* Menambahkan margin bawah untuk menjaga jarak antara ikon dan teks */
+}
+
+.wrapper .icons span i{
+   line-height: 60px;
+   font-size: 26px;
+}
+
+.wrapper .icons .tooltip {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 6px 14px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 25px;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icons:hover .tooltip{
+    top: -60px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+.wrapper .icons:hover span{
+    color: #ffffff;
+}
+
+.wrapper .icons:hover span,
+.wrapper .icons:hover .tooltip{
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+}
+
+.wrapper .whatsapp:hover span,
+.wrapper .whatsapp:hover .tooltip{
+    background: #19c54f;
+
+}
+
+.wrapper .instagram:hover span,
+.wrapper .instagram:hover .tooltip{
+    background: #e0487b;
+}
+
+.wrapper .twitter:hover span,
+.wrapper .twitter:hover .tooltip{
+    background: #46c1f6;
+}
+
+.wrapper .youtube:hover span,
+.wrapper .youtube:hover .tooltip{
+    background: #CD201F;
+}
+
+
+
+
