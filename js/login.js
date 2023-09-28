@@ -11,4 +11,18 @@ function togglePasswordVisibility() {
         passwordIcon.classList.remove("fa-unlock");
         passwordIcon.classList.add("fa-lock");
     }
+
+    function loginClicked() {
+        var emailInput = document.getElementById("emailInput").value;
+        var passwordInput = document.getElementById("passwordInput").value;
+
+        // Simple validation for email and password
+        if (emailInput === "" || passwordInput === "") {
+            alert("Email and password are required.");
+        } else if (emailInput === "user@example.com" && passwordInput === "password") {
+            alert("Login successful!"); // You can redirect to another page here
+        } else {
+            alert("Invalid email or password.");
+        }
+    }
 }
