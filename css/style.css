@@ -65,7 +65,9 @@ body::before {
     z-index: 100;
     align-items: center;
     box-sizing: border-box;
-    border-radius: 10px;
+}
+#icon-menu {
+    display: none;
 }
 
 .logo {
@@ -485,6 +487,7 @@ main {
     box-shadow: 0px 0px 10px rgba(17, 132, 239, 0.839);
     background-color: rgba(255, 255, 255, 0.833);
     border-radius: 30px;
+    flex-wrap: wrap;
 }
 
 .tracking-section,
@@ -609,6 +612,38 @@ select#destination option:checked {
 
 
 /* Responsive design */
+@media screen and (max-width: 768px) {
+    #icon-menu {
+        display: block;
+    }
+    .header{
+        position: relative;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background-color: #1E90FF ;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .showNavbar{
+        height: auto;
+        padding: 20px 10px;
+    }
+    .hideNavbar{
+        height: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main{
+        padding: 0;
+    }
+}
 @media screen and (max-width: 400px) {
     .register-container {
         max-width: 80%;

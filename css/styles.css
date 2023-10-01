@@ -55,7 +55,10 @@ body {
     z-index: 100;
     align-items: center;
     box-sizing: border-box;
-    border-radius: 10px;
+}
+
+#icon-menu {
+    display: none;
 }
 
 .logo {
@@ -324,7 +327,7 @@ body {
     border-radius: 25px;
     /* Buat sudut kotak lebih melengkung */
     font-size: 16px;
-    width: 700px;
+    max-width: 700px;
     /* Lebar input sesuai kebutuhan */
     outline: none;
     /* Hilangkan garis focus saat input aktif */
@@ -531,19 +534,6 @@ select#destination option:checked {
 }
 
 
-/* Responsive design */
-@media screen and (max-width: 400px) {
-    .register-container {
-        max-width: 80%;
-        /* Lebar maksimum pada layar kecil */
-    }
-
-    .login {
-        max-width: 80%;
-        /* Lebar maksimum pada layar kecil */
-    }
-}
-
 * {
     box-sizing: border-box
 }
@@ -618,4 +608,33 @@ select#destination option:checked {
     to {
         opacity: 1
     }
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    #icon-menu {
+        display: block;
+    }
+    .header{
+        position: relative;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background-color: #1E90FF ;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .showNavbar{
+        height: auto;
+        padding: 20px 10px;
+    }
+    .hideNavbar{
+        height: 0;
+    }
+  
 }

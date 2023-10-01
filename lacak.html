@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="img/Logo.png" />
     <title> GOTUTU Express - Track Shipping & Check Rates</title>
 </head>
@@ -12,11 +13,12 @@
 <body>
     <header class="header">
         <a href="index.html" class="logo">
-            <img src="img/Logo.png" alt="GOTUTU Express Logo"> <!-- Tambahkan tag img untuk logo -->
+            <img src="img/Logo.png" alt="GOTUTU Express Logo">
             <span class="logo-text">GOTUTU</span>
             <span class="logo-subtext">Express</span>
         </a>
-        <nav class="navbar">
+        <i class="fa-solid fa-bars" id="icon-menu" onclick="handleClick(event)"></i>
+        <nav class="navbar hideNavbar">
             <a href="index.html" class="active">Home</a>
             <a href="login.html">Login</a>
             <a href="register.html">Register</a>
@@ -37,7 +39,7 @@
         </section>
 
         <section class="shipping-rate-section">
-            <h2>Check Rates</h2>
+            <h2>Data Input Form</h2>
             <div class="box">
                 <label for="name">Name :</label>
                 <input type="text" id="name" name="name" placeholder="Input Name" required>
@@ -58,7 +60,7 @@
                     </select>
                     <label for="weight">Weight (kg) :</label>
                     <input type="number" id="weight" name="weight" step="0.01" placeholder="Input Weight" required>
-                    <button type="button" id="popup-shipping-rate">Cek Tarif</button>
+                    <button type="button" id="popup-shipping-rate">Submit</button>
                 </form>
             </div>
         </section>
@@ -70,5 +72,7 @@
             <!-- Konten popup akan ditampilkan di sini -->
         </div>
     </div>
+
+    <script src="js/lacak.js"></script>
 </body>
 </html>

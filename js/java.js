@@ -15,3 +15,9 @@ function showSlides() {
     slides[slideIndex - 1].style.display = "block";
     setTimeout(showSlides, 2500); // Change image every 2 seconds
 }
+
+function handleClick(event){
+    const navbar = document.querySelector(".navbar");
+    navbar.classList.toggle("showNavbar");
+    navbar.classList.toggle("hideNavbar");
+}
