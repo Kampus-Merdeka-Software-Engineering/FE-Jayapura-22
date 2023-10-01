@@ -11,7 +11,6 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f7f7f7; /* Warna latar belakang keseluruhan halaman */
     color: black; /* Warna teks utama */
-    margin-top: 80px;
     padding: 0;
     line-height: 1.7;
     background: linear-gradient(to right,#55a3f1, #cfd8dd);
@@ -283,5 +282,5 @@ body {
     .hideNavbar{
         height: 0;
     }
+    
 }
-

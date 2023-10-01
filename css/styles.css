@@ -17,7 +17,7 @@ body {
     /* Warna latar belakang keseluruhan halaman */
     color: black;
     /* Warna teks utama */
-    margin-top: 80px;
+
     padding: 0;
 }
 
@@ -323,14 +323,17 @@ body {
 
 .search-box input[type="text"] {
     padding: 10px;
+    margin-bottom: 10px;
     border: 4px solid #ccc;
     border-radius: 25px;
     /* Buat sudut kotak lebih melengkung */
     font-size: 16px;
+    width: 100%;
     max-width: 700px;
     /* Lebar input sesuai kebutuhan */
     outline: none;
     /* Hilangkan garis focus saat input aktif */
+    
 
 }
 
@@ -341,7 +344,7 @@ body {
     /* Buat sudut tombol pencarian lebih melengkung */
     color: #fff;
     cursor: pointer;
-    padding: 10px 20px;
+    padding: 10px 40px;
     margin-left: 10px;
     /* Berikan jarak antara input dan tombol */
     font-size: 16px;
@@ -357,57 +360,6 @@ body {
 /* Style ikon pencarian (gunakan font-awesome) */
 .search-box i.fa-search {
     font-size: 18px;
-}
-
-.register-container {
-    background-color: rgba(4, 29, 23, 0.5);
-    /* Latar belakang transparan dengan nilai alpha 0.8 */
-    box-shadow: 0px 0px 25px 10px #1E90FF;
-    padding: 60px;
-    border-radius: 50px;
-    text-align: center;
-    max-width: 400px;
-    margin: auto;
-    /* Untuk mengatur tengah secara horizontal */
-}
-
-.register-container h1 {
-    color: white;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.register-container p {
-    color: white;
-}
-
-.register-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.form-group {
-    margin-bottom: 5px;
-    text-align: left;
-}
-
-.register-form label {
-    font-weight: bold;
-    color: white;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="number"],
-input[type="password"] {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 25px;
-    width: 90%;
-    font-size: 16px;
-    background: none;
-    margin-bottom: 15px;
-
 }
 
 p {
