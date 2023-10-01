@@ -67,6 +67,7 @@ body::before {
 }
 #icon-menu {
     display: none;
+    color: white;
 }
 
 .logo {
@@ -298,6 +299,10 @@ body::before {
 }
 
 .login {
+    position: absolute;
+    margin-top: 25%;
+    left: 45%;
+    right: 45%;
     transform: translate(-30%, -50%);
     padding: 120px;
     width: 300px;
@@ -305,7 +310,7 @@ body::before {
     background-color: rgba(255, 255, 255, 0.833); /* Latar belakang transparan dengan nilai alpha 0.8 */
     box-shadow: 0px 0px 25px 10px #1E90FF;
     max-width: 400px;
-    margin: 500px 830px;/* Untuk mengatur tengah secara horizontal */
+    
 }
 
 .avatar {
@@ -640,15 +645,5 @@ select#destination option:checked {
         padding: 0;
     }
 }
-@media screen and (max-width: 400px) {
-    .register-container {
-        max-width: 80%;
-        /* Lebar maksimum pada layar kecil */
-    }
 
-    .login {
-        max-width: 80%;
-        /* Lebar maksimum pada layar kecil */
-    }
-}
 
