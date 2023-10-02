@@ -9,28 +9,33 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f7f7f7; /* Warna latar belakang keseluruhan halaman */
-    color: black; /* Warna teks utama */
+    background-color: #f7f7f7;
+    /* Warna latar belakang keseluruhan halaman */
+    color: black;
+    /* Warna teks utama */
     padding: 0;
 }
 
 body::before {
     content: '';
-    background-image: url('/img/Logo.png'); /* Gambar latar belakang yang sama dengan latar belakang utama */
+    background-image: url('/img/Logo.png');
+    /* Gambar latar belakang yang sama dengan latar belakang utama */
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
-    filter: blur(5px); /* Mengatur sejauh mana gambar latar belakang di-blurkan */
+    filter: blur(5px);
+    /* Mengatur sejauh mana gambar latar belakang di-blurkan */
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     width: 100%;
-    height: 120%;
-    z-index: -1; /* Menempatkan lapisan pseudo-element di bawah konten utama */
-  }
-  
+    height: 130%;
+    z-index: -1;
+    /* Menempatkan lapisan pseudo-element di bawah konten utama */
+}
+
 
 .container {
     max-width: 1200px;
@@ -65,6 +70,7 @@ body::before {
     align-items: center;
     box-sizing: border-box;
 }
+
 #icon-menu {
     display: none;
     color: white;
@@ -91,8 +97,10 @@ body::before {
     font-size: 25px;
     font-weight: 600;
     margin-right: 5px;
-    color: white;/* Warna isi teks */
-    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.896);/* Warna tepi tulisan */
+    color: white;
+    /* Warna isi teks */
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.896);
+    /* Warna tepi tulisan */
 }
 
 .logo-subtext {
@@ -116,7 +124,7 @@ body::before {
     text-decoration: none;
     list-style: none;
     font-family: 'poppins', sans-serif;
-    
+
 }
 
 .home-content {
@@ -139,13 +147,19 @@ body::before {
     margin: 20px 0 40px;
 }
 
-.social-icon{
-    width: 50px;/* Ubah lebar ikon sesuai yang Anda inginkan */
-    height: 50px;/* Ubah tinggi ikon sesuai yang Anda inginkan */
-    cursor: pointer;/* Mengubah kursor menjadi tangan saat mengarahkan ke ikon */
-    transition: transform 0.2s;/* Animasi saat ikon diberi hover */
-    margin-top: 2px; /* Atur margin atas sesuai kebutuhan Anda */
-    text-align: center; /* Pusatkan elemen di tengah */
+.social-icon {
+    width: 50px;
+    /* Ubah lebar ikon sesuai yang Anda inginkan */
+    height: 50px;
+    /* Ubah tinggi ikon sesuai yang Anda inginkan */
+    cursor: pointer;
+    /* Mengubah kursor menjadi tangan saat mengarahkan ke ikon */
+    transition: transform 0.2s;
+    /* Animasi saat ikon diberi hover */
+    margin-top: 2px;
+    /* Atur margin atas sesuai kebutuhan Anda */
+    text-align: center;
+    /* Pusatkan elemen di tengah */
 }
 
 .home-sci a {
@@ -161,13 +175,15 @@ body::before {
     text-decoration: none;
     justify-content: center;
     margin: 20px 0;
-    transition: transform 0.3s; /* Animasi saat ikon diberi hover */
+    transition: transform 0.3s;
+    /* Animasi saat ikon diberi hover */
 }
 
 .home-sci a:hover {
     background: #1E90FF;
     color: #264653;
-    transform: scale(1.12); /* Membesarkan ikon saat di-hover (1.2 adalah faktor skala yang bisa disesuaikan) */
+    transform: scale(1.12);
+    /* Membesarkan ikon saat di-hover (1.2 adalah faktor skala yang bisa disesuaikan) */
 }
 
 
@@ -177,8 +193,10 @@ body::before {
     width: 20%;
     justify-content: center;
     align-items: center;
-    float: right;/* Menggeser gambar ke kanan */
-    margin-left: 15px;/* Memberikan jarak antara gambar dan teks */
+    float: right;
+    /* Menggeser gambar ke kanan */
+    margin-left: 15px;
+    /* Memberikan jarak antara gambar dan teks */
     max-width: 50%;
     /* Mengatur lebar maksimum gambar */
 
@@ -207,7 +225,8 @@ body::before {
     color: black;
     /* Warna isi teks */
     text-shadow: 2px 2px 4px rgba(254, 254, 254, 0.896);
-    /* Warna tepi tulisan *//
+    /* Warna tepi tulisan */
+    /
 }
 
 
@@ -300,17 +319,17 @@ body::before {
 
 .login {
     position: absolute;
-    margin-top: 25%;
+    margin-top: 35%;
     left: 45%;
     right: 45%;
     transform: translate(-30%, -50%);
     padding: 120px;
     width: 300px;
     border-radius: 50px;
-    background-color: rgba(255, 255, 255, 0.833); /* Latar belakang transparan dengan nilai alpha 0.8 */
+    background-color: rgba(255, 255, 255, 0.833);
+    /* Latar belakang transparan dengan nilai alpha 0.8 */
     box-shadow: 0px 0px 25px 10px #1E90FF;
     max-width: 400px;
-    
 }
 
 .avatar {
@@ -376,17 +395,17 @@ body::before {
     margin-right: 10px;
     display: flex;
     justify-content: space-between;
-    
+
 }
 
 .bottom p {
-    color: black ;
+    color: black;
     font-size: 15px;
     text-decoration: none;
 }
 
 .bottom a {
-    color: #1E90FF ;
+    color: #1E90FF;
     font-size: 15px;
     text-decoration: none;
 }
@@ -397,13 +416,15 @@ body::before {
 
 
 .register-container {
-    background-color: rgba(255, 255, 255, 0.833); /* Latar belakang transparan dengan nilai alpha 0.8 */
+    background-color: rgba(255, 255, 255, 0.833);
+    /* Latar belakang transparan dengan nilai alpha 0.8 */
     box-shadow: 0px 0px 25px 10px #1E90FF;
     padding: 60px;
     border-radius: 50px;
     text-align: center;
     max-width: 400px;
-    margin: 150px auto;/* Untuk mengatur tengah secara horizontal */    
+    margin: 150px auto;
+    /* Untuk mengatur tengah secara horizontal */
 }
 
 .register-container h1 {
@@ -435,7 +456,7 @@ body::before {
 
 input[type="text"],
 input[type="email"],
-input[type="number"], 
+input[type="number"],
 input[type="password"] {
     padding: 10px;
     border: 1px solid #ccc;
@@ -444,11 +465,11 @@ input[type="password"] {
     font-size: 16px;
     background: none;
     margin-bottom: 15px;
-    
+
 }
 
 button[type="submit"] {
-    background-color:#1E90FF;
+    background-color: #1E90FF;
     color: #fff;
     width: 96%;
     border: none;
@@ -493,7 +514,8 @@ main {
 
 .tracking-section,
 .shipping-rate-section {
-    text-shadow: 2px 2px 4px rgb(10, 132, 225);/* Warna tepi tulisan */
+    text-shadow: 2px 2px 4px rgb(10, 132, 225);
+    /* Warna tepi tulisan */
 }
 
 .tracking-section h2,
@@ -530,26 +552,38 @@ label {
 
 /* Gaya tombol untuk tombol "Track" pada bagian pelacakan */
 #popup-tracking {
-    background-color: #007bff; /* Warna latar belakang tombol */
-    color: #fff; /* Warna teks tombol */
-    border: none; /* Hapus batasan */
-    padding: 10px 20px; /* Ruang dalam tombol */
-    cursor: pointer; /* Ganti ikon kursor saat mengarahkan ke tombol */
-    border-radius: 10px; /* Tambahkan sudut melengkung pada tombol */
+    background-color: #007bff;
+    /* Warna latar belakang tombol */
+    color: #fff;
+    /* Warna teks tombol */
+    border: none;
+    /* Hapus batasan */
+    padding: 10px 20px;
+    /* Ruang dalam tombol */
+    cursor: pointer;
+    /* Ganti ikon kursor saat mengarahkan ke tombol */
+    border-radius: 10px;
+    /* Tambahkan sudut melengkung pada tombol */
 }
 
 /* Gaya tombol untuk tombol "Cek Tarif" pada bagian tarif pengiriman */
 #popup-shipping-rate {
-    background-color:#007bff; /* Warna latar belakang tombol */
-    color: #fff; /* Warna teks tombol */
-    border: none; /* Hapus batasan */
-    padding: 10px 20px; /* Ruang dalam tombol */
-    cursor: pointer; /* Ganti ikon kursor saat mengarahkan ke tombol */
-    border-radius: 10px; /* Tambahkan sudut melengkung pada tombol */
+    background-color: #007bff;
+    /* Warna latar belakang tombol */
+    color: #fff;
+    /* Warna teks tombol */
+    border: none;
+    /* Hapus batasan */
+    padding: 10px 20px;
+    /* Ruang dalam tombol */
+    cursor: pointer;
+    /* Ganti ikon kursor saat mengarahkan ke tombol */
+    border-radius: 10px;
+    /* Tambahkan sudut melengkung pada tombol */
 }
 
 #popup-tracking:hover,
-#popup-shipping-rate:hover{
+#popup-shipping-rate:hover {
     background-color: #0056b3;
 }
 
@@ -568,7 +602,7 @@ label {
 }
 
 #popup-content {
-    background-color:#1E90FF;
+    background-color: #1E90FF;
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
@@ -582,20 +616,25 @@ select#destination {
     border: 1px solid #ccc;
     border-radius: 25px;
     font-size: 16px;
-    appearance: none; /* Menghilangkan default styling pada beberapa browser */
-    background-color: #fff; /* Warna latar belakang */
+    appearance: none;
+    /* Menghilangkan default styling pada beberapa browser */
+    background-color: #fff;
+    /* Warna latar belakang */
 }
 
 /* Style untuk tampilan ketika elemen <select> terbuka */
 select#destination:focus {
     outline: none;
-    border-color: #007bff; /* Warna border saat terfokus */
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Efek shadow saat terfokus */
+    border-color: #007bff;
+    /* Warna border saat terfokus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    /* Efek shadow saat terfokus */
 }
 
 /* Style untuk panah dropdown */
 select#destination::-ms-expand {
-    display: none; /* Menghilangkan panah dropdown pada IE/Edge */
+    display: none;
+    /* Menghilangkan panah dropdown pada IE/Edge */
 }
 
 /* Style untuk pilihan (options) dalam elemen <select> */
@@ -607,43 +646,173 @@ select#destination option {
 
 /* Style untuk ketika pilihan (options) dipilih */
 select#destination option:checked {
-    background-color: #007bff; /* Warna latar belakang saat dipilih */
-    color: #fff; /* Warna teks saat dipilih */
+    background-color: #007bff;
+    /* Warna latar belakang saat dipilih */
+    color: #fff;
+    /* Warna teks saat dipilih */
 }
 
 
 /* Responsive design */
 @media screen and (max-width: 768px) {
+    body::before {
+        width: 120%;
+        height: 120%;
+        z-index: -1;
+        /* Menempatkan lapisan pseudo-element di bawah konten utama */
+    }
+
     #icon-menu {
         display: block;
     }
-    .header{
+
+    .header {
         position: relative;
     }
-    .navbar{
+
+    .navbar {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
         position: absolute;
-        top: 80px;
+        top: 30px;
         right: 0;
-        background-color: #1E90FF ;
+        background-color: #1E90FF;
         overflow: hidden;
         border-radius: 10px;
+        margin-right: 1px;
     }
-    .showNavbar{
+
+    .navbar a {
+        font-size: 12px;
+    }
+
+    .showNavbar {
         height: auto;
         padding: 20px 10px;
     }
-    .hideNavbar{
+
+    .hideNavbar {
         height: 0;
+    }
+
+    .logo-text {
+        font-size: 10px;
+        font-weight: 600;
+        margin-right: 5px;
+        margin-left: 5px;
+        color: white;
+        /* Warna isi teks */
+        text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.896);
+        /* Warna tepi tulisan */
+    }
+
+    .logo-subtext {
+        font-size: 9px;
+        color: white;
+        /* Warna isi teks */
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        /* Warna tepi tulisan */
+    }
+
+    .logo img {
+        width: 30px;
+        /* Ubah lebar sesuai yang Anda inginkan */
+        height: 30px;
+        /* Biarkan tinggi mengikuti proporsi asli gambar */
+    }
+
+    main {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 250px;
+        margin: 0px auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 50px;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(17, 132, 239, 0.839);
+        background-color: rgba(255, 255, 255, 0.833);
+        border-radius: 30px;
+        flex-wrap: wrap;
+    }
+
+    .tracking-section h2,
+    .shipping-rate-section h2 {
+        font-size: 20px;
+        margin-top: 30px;
+        margin-left: 60px;
+        align-items: center;
+    }
+
+    .register-container {
+        background-color: rgba(255, 255, 255, 0.833);
+        /* Latar belakang transparan dengan nilai alpha 0.8 */
+        box-shadow: 0px 0px 25px 10px #1E90FF;
+        padding: 60px;
+        border-radius: 50px;
+        max-width: 150px;
+        /* Untuk mengatur tengah secara horizontal */
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .register-container h1 {
+        color: black;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    .form-group {
+        color: black;
+        margin-bottom: 5px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .register-container p {
+        color: black;
+        font-size: 10px;
+    }
+
+    label {
+        font-size: 13px;
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: black;
+    }
+
+    #tracking-number,
+    #name,
+    #namabarang,
+    #nohp,
+    #weight {
+        padding: 10px;
+        width: 100%;
+        font-size: 8px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="password"] {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 25px;
+        width: 90%;
+        font-size: 10px;
+        background: none;
+        margin-bottom: 15px;
+
     }
 }
 
 @media screen and (max-width: 768px) {
-    main{
+    main {
         padding: 0;
     }
 }
-
-

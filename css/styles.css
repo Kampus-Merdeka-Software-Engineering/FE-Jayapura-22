@@ -244,7 +244,7 @@ body {
 
 .features {
     text-align: center;
-    padding: 80px 0;
+    padding: 20px 0;
 }
 
 .feature {
@@ -486,9 +486,7 @@ select#destination option:checked {
 }
 
 
-* {
-    box-sizing: border-box
-}
+
 
 /* Style the slideshow container */
 .slideshow-container {
@@ -511,27 +509,11 @@ select#destination option:checked {
 .mySlides {
     display: none;
     margin-bottom: 20px;
+    margin-top: 3%;
 }
 
 /* Caption text */
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 1px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
 
-/* Number text (1/3 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
 
 /* The dots/bullets/indicators */
 .dot {
@@ -542,7 +524,8 @@ select#destination option:checked {
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
-    transition: background-color 0.6s ease;
+    transition: background-color 0.2s ease;
+    margin-bottom: 40px;
 }
 
 /* Fading animation */
@@ -570,16 +553,21 @@ select#destination option:checked {
     .header{
         position: relative;
     }
-    .navbar{
+    .navbar {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
         position: absolute;
-        top: 80px;
+        top: 30px;
         right: 0;
-        background-color: #1E90FF ;
+        background-color: #1E90FF;
         overflow: hidden;
         border-radius: 10px;
+        margin-right: 1px;
+    }
+
+    .navbar a{
+        font-size: 12px;
     }
     .showNavbar{
         height: auto;
@@ -587,6 +575,101 @@ select#destination option:checked {
     }
     .hideNavbar{
         height: 0;
+    }
+    .hero h1 {
+        font-size: 20px;
+    }
+    .search-box {
+        text-align: center;
+        /* Pusatkan elemen dalam kotak pencarian */
+        margin-top: 50px;
+    }
+    .search-box input[type="text"] {
+        padding: 5px;
+        margin-bottom: 10px;
+        border: 4px solid #ccc;
+        border-radius: 25px;
+        /* Buat sudut kotak lebih melengkung */
+        font-size: 16px;
+        width: 100%;
+        max-width: 180px;
+        /* Lebar input sesuai kebutuhan */
+        outline: none;
+        /* Hilangkan garis focus saat input aktif */
+        
+    
+    }
+    .search-box button {
+        background-color: #1E90FF;
+        border: none;
+        border-radius: 25px;
+        /* Buat sudut tombol pencarian lebih melengkung */
+        color: #fff;
+        cursor: pointer;
+        padding: 8px 25px;
+        margin-left: 10px;
+        /* Berikan jarak antara input dan tombol */
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+        /* Animasi perubahan warna latar belakang tombol saat dihover */
+    }
+    .contact p {
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+
+    .feature h2{
+        font-size: 20px;
+    }
+    .feature p{
+        font-size: 12px;
+    }
+    .btn {
+        position: relative;
+        width: 130px;
+        height: 50px;
+        display: inline-flex;
+        background: #0000CD;
+        border-radius: 50px;
+        font-size: 13px;
+        color: #f2e9e4;
+        text-decoration: none;
+        font-weight: 300;
+        letter-spacing: 1px;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+    .contact {
+        background-color: #1E90FF;
+        /* Warna latar belakang contact section */
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .logo-text {
+        font-size: 10px;
+        font-weight: 600;
+        margin-right: 5px;
+        margin-left: 5px;
+        color: white;
+        /* Warna isi teks */
+        text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.896);
+        /* Warna tepi tulisan */
+    }
+    
+    .logo-subtext {
+        font-size: 9px;
+        color: white;
+        /* Warna isi teks */
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        /* Warna tepi tulisan */
+    }
+    .logo img {
+        width: 30px;
+        /* Ubah lebar sesuai yang Anda inginkan */
+        height: 30px;
+        /* Biarkan tinggi mengikuti proporsi asli gambar */
     }
   
 }
