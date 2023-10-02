@@ -318,19 +318,18 @@ body::before {
 }
 
 .login {
-    position: absolute;
-    margin-top: 35%;
-    left: 45%;
-    right: 45%;
-    transform: translate(-30%, -50%);
-    padding: 120px;
-    width: 300px;
+    margin: 0 auto;
+    margin-top: 20vh; /* Menggunakan unit viewport height untuk membuatnya berada di tengah vertikal */
+    padding: 100px;
+    width: 280px;
     border-radius: 50px;
     background-color: rgba(255, 255, 255, 0.833);
     /* Latar belakang transparan dengan nilai alpha 0.8 */
     box-shadow: 0px 0px 25px 10px #1E90FF;
-    max-width: 400px;
+
+    text-align: center;
 }
+
 
 .avatar {
     font-size: 30px;
@@ -656,7 +655,7 @@ select#destination option:checked {
 /* Responsive design */
 @media screen and (max-width: 768px) {
     body::before {
-        width: 120%;
+        width: 120px;
         height: 120%;
         z-index: -1;
         /* Menempatkan lapisan pseudo-element di bawah konten utama */

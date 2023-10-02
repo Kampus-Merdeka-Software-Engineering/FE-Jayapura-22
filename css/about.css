@@ -89,6 +89,7 @@ body {
     list-style: none;
     font-family: 'poppins', sans-serif;
     margin-bottom: 50px;
+    margin-top: 30px;
 
 }
 
@@ -329,6 +330,14 @@ p {
         /* Ubah lebar sesuai yang Anda inginkan */
         height: 30px;
         /* Biarkan tinggi mengikuti proporsi asli gambar */
+    }
+
+    .home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 15% 0;
+        margin-bottom: 80px;
     }
 
     .home-img {

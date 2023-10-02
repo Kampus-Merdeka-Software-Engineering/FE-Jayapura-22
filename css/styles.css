@@ -318,7 +318,7 @@ body {
 .search-box {
     text-align: center;
     /* Pusatkan elemen dalam kotak pencarian */
-    margin-top: 480px;
+    margin-top: 520px;
 }
 
 .search-box input[type="text"] {
