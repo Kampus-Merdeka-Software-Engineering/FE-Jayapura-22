@@ -321,12 +321,11 @@ body::before {
     margin: 0 auto;
     margin-top: 20vh; /* Menggunakan unit viewport height untuk membuatnya berada di tengah vertikal */
     padding: 100px;
-    width: 280px;
+    max-width: 280px;
     border-radius: 50px;
     background-color: rgba(255, 255, 255, 0.833);
     /* Latar belakang transparan dengan nilai alpha 0.8 */
     box-shadow: 0px 0px 25px 10px #1E90FF;
-
     text-align: center;
 }
 
@@ -813,5 +812,12 @@ select#destination option:checked {
 @media screen and (max-width: 768px) {
     main {
         padding: 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .login {
+        padding: 100px 0px;
+
     }
 }
