@@ -20,3 +20,23 @@ function handleClick(event){
     navbar.classList.toggle("showNavbar");
     navbar.classList.toggle("hideNavbar");
 }
+ // Mendapatkan elemen input dan tombol pencarian
+ var searchInput = document.getElementById("search-input");
+ var searchButton = document.getElementById("search-button");
+
+ // Mendengarkan klik tombol pencarian
+ searchButton.addEventListener("click", function() {
+     // Mendapatkan nilai pencarian dari input
+     var searchTerm = searchInput.value;
+
+     // Menentukan halaman yang akan diarahkan berdasarkan query pencarian
+     var targetPage = determineTargetPage(searchTerm);
+
+     // Redirect ke halaman yang sesuai
+     if (targetPage) {
+         window.location.href = targetPage;
+     } else {
+         // Tampilkan pesan error jika halaman tidak ditemukan
+         alert("Halaman tidak ditemukan untuk pencarian ini");
+     }
+ });

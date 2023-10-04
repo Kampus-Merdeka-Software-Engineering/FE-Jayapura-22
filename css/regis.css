@@ -218,28 +218,6 @@ body::before {
 
 
 
-.hero {
-    text-align: center;
-    margin-top: 2px;
-    height: 70vh;
-    color: black;
-    /* Warna isi teks */
-    text-shadow: 2px 2px 4px rgba(254, 254, 254, 0.896);
-    /* Warna tepi tulisan */
-    /
-}
-
-
-.hero h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 18px;
-    margin-bottom: 40px;
-}
-
 .btn {
     position: relative;
     width: 200px;
@@ -315,58 +293,6 @@ body::before {
 
 .footer a:hover {
     text-decoration: underline;
-}
-
-.login {
-    margin: 0 auto;
-    margin-top: 20vh; /* Menggunakan unit viewport height untuk membuatnya berada di tengah vertikal */
-    padding: 100px;
-    max-width: 280px;
-    border-radius: 50px;
-    background-color: rgba(255, 255, 255, 0.833);
-    /* Latar belakang transparan dengan nilai alpha 0.8 */
-    box-shadow: 0px 0px 25px 10px #1E90FF;
-    text-align: center;
-}
-
-
-.login h2 {
-    text-align: center;
-    color: black;
-    font-size: 30px;
-    font-family: sans-serif;
-    letter-spacing: 3px;
-    padding-top: 0;
-    margin-top: -20px;
-}
-
-.box-login {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
-    border-bottom: 2px solid white;
-    padding: 8px 0;
-}
-
-#passwordIcon{
-    padding: 10px 10px;
-}
-
-.box-login i {
-    font-size: 23px;
-    color: black;
-    padding: 5px 0;
-}
-
-.box-login input {
-    width: 85%;
-    padding: 5px 0;
-    background: none;
-    border: none;
-    outline: none;
-    color: black;
-    margin-left: 20px;
-    font-size: 18px;
 }
 
 .box-login input::placeholder,
@@ -501,29 +427,6 @@ main {
     flex-wrap: wrap;
 }
 
-.tracking-section,
-.shipping-rate-section {
-    text-shadow: 2px 2px 4px rgb(10, 132, 225);/* Warna tepi tulisan */
-}
-
-.tracking-section h2,
-.shipping-rate-section h2 {
-    font-size: 1.5rem;
-    margin-top: 30px;
-    margin-left: 80px;
-}
-
-.box {
-    background-color: #f5f5f5;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(17, 132, 239, 0.839);
-    margin-top: 30px;
-    margin-bottom: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
 form {
     display: flex;
     flex-direction: column;
@@ -536,64 +439,6 @@ label {
     font-weight: bold;
     color: black;
 }
-
-
-/* Gaya tombol untuk tombol "Track" pada bagian pelacakan */
-#popup-tracking {
-    background-color: #007bff;
-    /* Warna latar belakang tombol */
-    color: #fff;
-    /* Warna teks tombol */
-    border: none;
-    /* Hapus batasan */
-    padding: 8px 15px;
-    /* Ruang dalam tombol */
-    cursor: pointer;
-    /* Ganti ikon kursor saat mengarahkan ke tombol */
-    border-radius: 10px;
-    /* Tambahkan sudut melengkung pada tombol */
-}
-
-/* Gaya tombol untuk tombol "Cek Tarif" pada bagian tarif pengiriman */
-#popup-shipping-rate {
-    background-color: #007bff;
-    /* Warna latar belakang tombol */
-    color: #fff;
-    /* Warna teks tombol */
-    border: none;
-    /* Hapus batasan */
-    padding: 8px 15px;
-    /* Ruang dalam tombol */
-    cursor: pointer;
-    /* Ganti ikon kursor saat mengarahkan ke tombol */
-    border-radius: 10px;
-    /* Tambahkan sudut melengkung pada tombol */
-}
-
-
-/* Style untuk elemen <select> */
-select#destination {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 25px;
-    font-size: 10px;
-    appearance: none;/* Menghilangkan default styling pada beberapa browser */
-    background-color: #f5f5f5;/* Warna latar belakang */
-}
-
-/* Style untuk tampilan ketika elemen <select> terbuka */
-select#destination:focus {
-    outline: none;
-    border-color: #007bff;
-    /* Warna border saat terfokus */
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-    /* Efek shadow saat terfokus */
-}
-
-
-
 
 /* Responsive design */
 @media screen and (max-width: 768px) {
@@ -638,8 +483,6 @@ select#destination:focus {
     }
     .box{
         padding: 40px 65px;
-        margin-bottom: 40px;
-        
     }
 
     .logo-text {
@@ -755,33 +598,10 @@ select#destination:focus {
 
     }
 
-    .box-login{
-        padding: 10px 10px;
-    }
-    #passwordIcon{
-        padding: 10px 10px;
-    }
     button[type="submit"] {
-        width: 70%;
+        width: 100%;
+       
+        
     }
-    .login p{
-        font-size: 10px;
-        padding: 0 40px;
-    }
-    .login a {
-        font-size: 10px;
-    }
-}
 
-@media screen and (max-width: 768px) {
-    main {
-        padding: 0;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .login {
-        padding: 100px 0px;
-
-    }
 }
