@@ -673,3 +673,109 @@ select#destination option:checked {
     }
   
 }
+
+@media screen and (max-width: 798px) {
+    body::before {
+        margin: 10px;
+        z-index: -1;
+        /* Menempatkan lapisan pseudo-element di bawah konten utama */
+    }
+
+    #icon-menu {
+        display: block;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background-color: #1E90FF;
+        overflow: hidden;
+        border-radius: 10px;
+        margin-right: 1px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+    }
+
+    .showNavbar {
+        height: auto;
+        padding: 20px 30px;
+    }
+
+    .hideNavbar {
+        height: 0;
+    }
+    .box{
+        padding: 40px 65px;
+    }
+
+    .logo-text {
+        font-size: 20px;
+        font-weight: 600;
+        margin-right: 5px;
+        margin-left: 5px;
+        color: white;
+        /* Warna isi teks */
+        text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.896);
+        /* Warna tepi tulisan */
+    }
+
+    .logo-subtext {
+        font-size: 15px;
+        color: white;
+        /* Warna isi teks */
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        /* Warna tepi tulisan */
+    }
+
+    .logo img {
+        width: 50px;
+        /* Ubah lebar sesuai yang Anda inginkan */
+        height: 50px;
+        /* Biarkan tinggi mengikuti proporsi asli gambar */
+    }
+
+    .search-box {
+        text-align: center;
+        /* Pusatkan elemen dalam kotak pencarian */
+        margin-top: 180px;
+    }
+    .search-box input[type="text"] {
+        padding: 5px;
+        margin-bottom: 10px;
+        border: 4px solid #ccc;
+        border-radius: 25px;
+        /* Buat sudut kotak lebih melengkung */
+        font-size: 16px;
+        width: 100%;
+        max-width: 580px;
+        /* Lebar input sesuai kebutuhan */
+        outline: none;
+        /* Hilangkan garis focus saat input aktif */
+        
+    
+    }
+    .search-box button {
+        background-color: #1E90FF;
+        border: none;
+        border-radius: 25px;
+        /* Buat sudut tombol pencarian lebih melengkung */
+        color: #fff;
+        cursor: pointer;
+        padding: 8px 35px;
+        margin-left: 10px;
+        /* Berikan jarak antara input dan tombol */
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+        /* Animasi perubahan warna latar belakang tombol saat dihover */
+    }
+}

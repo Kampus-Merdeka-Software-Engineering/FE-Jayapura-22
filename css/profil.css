@@ -1,4 +1,3 @@
-/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
@@ -43,18 +42,6 @@ body::before {
     padding: 20px;
 
 }
-
-.container-Order {
-    max-width: 600px;
-    margin: 20px auto;
-    margin-top: 150px;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    background: rgba(4, 29, 23, 0.5);
-    border-radius: 5px;
-}
-
 
 /* Style header */
 .header {
@@ -217,237 +204,82 @@ body::before {
 }
 
 
-
-.btn {
-    position: relative;
-    width: 200px;
-    height: 60px;
-    display: inline-flex;
-    background: #0000CD;
-    border-radius: 80px;
-    font-size: 19px;
-    color: #f2e9e4;
-    text-decoration: none;
-    font-weight: 600;
-    letter-spacing: 1px;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-}
-
-.btn:hover {
-    background-color: #0000CD;
-    /* Warna tombol saat dihover */
-}
-
-.features {
-    text-align: center;
-    padding: 80px 0;
-}
-
-.feature {
-    margin-bottom: 40px;
-}
-
-.feature img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 20px;
-}
-
-.contact {
-    background-color: #1E90FF;
-    /* Warna latar belakang contact section */
-    color: #fff;
-    text-align: center;
-    padding: 80px 0;
-}
-
-.contact h2 {
-    margin-bottom: 20px;
-}
-
-.contact p {
-    font-size: 18px;
-    margin-bottom: 40px;
-}
-
-.footer {
-    background-color: #007bff;
-    color: #fff;
-    text-align: center;
-    padding: 8px 0;
-    font-size: 14px;
-    border-radius: 18px;
-}
-
-
-.footer p {
-    margin: 20px;
-}
-
-.footer a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.footer a:hover {
-    text-decoration: underline;
-}
-
-.box-login input::placeholder,
-.register-form input::placeholder {
-    color: black;
-}
-
-.btn-login .box-login input:hover {
-    background: rgba(10, 10, 10, s 0.5);
-}
-
-.bottom {
-    margin-left: 10px;
-    margin-right: 10px;
+.team {
     display: flex;
-    justify-content: space-between;
-
-}
-
-.bottom p {
-    color: black;
-    font-size: 15px;
-    text-decoration: none;
-}
-
-.bottom a {
-    color: #1E90FF;
-    font-size: 15px;
-    text-decoration: none;
-}
-
-.bottom a:hover {
-    text-decoration: underline;
-}
-
-
-.register-container {
-    background-color: rgba(255, 255, 255, 0.833);
-    /* Latar belakang transparan dengan nilai alpha 0.8 */
-    box-shadow: 0px 0px 25px 10px #1E90FF;
-    padding: 60px;
-    border-radius: 50px;
-    text-align: center;
-    max-width: 400px;
-    margin: 150px auto;
-    /* Untuk mengatur tengah secara horizontal */
-}
-
-.register-container h1 {
-    color: black;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.register-container p {
-    color: black;
-}
-
-.register-form {
-    color: black;
-    display: flex;
-    flex-direction: column;
-}
-
-.form-group {
-    color: black;
-    margin-bottom: 5px;
-    text-align: left;
-}
-
-.register-form label {
-    font-weight: bold;
-    color: black;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="number"],
-input[type="password"] {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 25px;
-    width: 90%;
-    font-size: 16px;
-    background: none;
-    margin-bottom: 15px;
-
-}
-
-button[type="submit"] {
-    background-color: #1E90FF;
-    color: #fff;
-    width: 96%;
-    border: none;
-    padding: 10px;
-    border-radius: 25px;
-    font-size: 15px;
-    cursor: pointer;
-    margin-top: 15px;
-    transition: background-color 0.3s;
-}
-
-
-button[type="submit"]:hover {
-    background-color: #0056b3;
-}
-
-p {
-    margin-top: 15px;
-    color: black;
-}
-
-a {
-    text-decoration: none;
-    color: #0073e6;
-    font-weight: bold;
-}
-
-main {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    max-width: 900px;
-    margin: 0px auto;
-    margin-top: 180px;
-    margin-bottom: 100px;
-    padding: 50px;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(17, 132, 239, 0.839);
-    background-color: rgba(255, 255, 255, 0.833);
-    border-radius: 30px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+.team-member {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 20px;
+    width: 300px;
+    height: 400px; /* Sesuaikan tinggi dengan kebutuhan Anda */
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    border-radius: 80px; /* Tambahkan border radius */
+    position: relative;
+    margin-top: 150px;
 }
 
-label {
-    display: block;
-    margin-top: 10px;
+.member-photo {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+    border-radius: 8px 8px 0 0; /* Tambahkan border radius */
+    flex-shrink: 0; /* Biarkan foto tidak mengecil */
+}
+
+.member-photo img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+    object-fit: cover; /* Agar gambar tidak terlalu zoom */
+}
+
+.member-photo:hover img {
+    transform: scale(1.1);
+}
+.member-info {
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.member-info h2 {
+    margin: 0;
+    font-size: 20px;
     margin-bottom: 5px;
-    font-weight: bold;
-    color: black;
 }
 
-/* Responsive design */
-@media screen and (max-width: 768px) {
-    body::before {
-        margin: 10px;
-        z-index: -1;
-        /* Menempatkan lapisan pseudo-element di bawah konten utama */
-    }
+.social-icons {
+    display: flex;
+    justify-content: center; /* Letakkan ikon di tengah */
+    margin-top: 20px;
+}
 
+.social-icons a {
+    text-decoration: none;
+    color: #007BFF;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: orange;
+}
+/* ... Kode CSS sebelumnya ... */
+
+.member-photo:hover img {
+    transform: scale(1.05); /* Sesuaikan level zoom sesuai keinginan Anda */
+}
+
+
+/* Media query untuk layar dengan lebar maksimum 768px */
+@media screen and (max-width: 768px) {
     #icon-menu {
         display: block;
     }
@@ -483,6 +315,8 @@ label {
     }
     .box{
         padding: 40px 65px;
+        margin-bottom: 40px;
+        
     }
 
     .logo-text {
@@ -511,114 +345,40 @@ label {
         /* Biarkan tinggi mengikuti proporsi asli gambar */
     }
 
-    main {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        max-width: 250px;
-        margin: 0px auto;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        padding: 50px;
-        background-color: #fff;
-        box-shadow: 0px 0px 10px rgba(17, 132, 239, 0.839);
-        background-color: rgba(255, 255, 255, 0.833);
-        border-radius: 30px;
-        flex-wrap: wrap;
+    .team-member {
+        display: column;
+        height: auto; /* Sesuaikan tinggi sesuai konten */
+        margin: 10px 0; /* Ubah margin agar lebih rapat */
+        padding: 0px 1px;
     }
 
-    .tracking-section h2,
-    .shipping-rate-section h2 {
-        font-size: 20px;
-        margin-top: 30px;
-        margin-left: 60px;
-        align-items: center;
+    .member-photo {
+        height: auto; /* Sesuaikan tinggi sesuai konten */
+        border-radius: 20px 20px 0 0; /* Tambahkan border radius */
+        padding: 0px 0; /* Ubah padding agar lebih padat */
     }
 
-    .register-container {
-        background-color: rgba(255, 255, 255, 0.833);
-        /* Latar belakang transparan dengan nilai alpha 0.8 */
-        box-shadow: 0px 0px 25px 10px #1E90FF;
-        padding: 60px;
-        border-radius: 50px;
-        max-width: 160px;
-        /* Untuk mengatur tengah secara horizontal */
-        margin-top: 50px;
-        margin-bottom: 50px;
+    .member-info p{
+        padding: 10px; /* Ubah padding agar lebih padat */
+        font-size: 10px;
     }
-
-    .register-container h1 {
-        color: black;
-        margin-top: 10px;
-        margin-bottom: 30px;
-        font-size: 20px;
-    }
-
-    .form-group {
-        color: black;
-        margin-bottom: 5px;
-        text-align: left;
+    .member-info h2 {
+        margin: 0;
         font-size: 15px;
     }
-
-    .form-group label {
-        padding: 0;
-    }
-
-    .register-container p {
-        color: black;
-        font-size: 10px;
-    }
-
-    label {
-        font-size: 13px;
-        display: block;
-        margin-top: 10px;
-        margin-bottom: 5px;
-        font-weight: bold;
-        color: black;
-    }
-
-    #tracking-number,
-    #name,
-    #namabarang,
-    #nohp,
-    #weight {
-        padding: 10px;
-        width: 100%;
-        font-size: 8px;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="number"],
-    input[type="password"] {
-        padding: 10px 30px;
-        font-size: 10px;
-
-    }
-
-    button[type="submit"] {
-        width: 100%;
-       
-        
-    }
-
 }
 
 @media screen and (max-width: 798px) {
     body::before {
         margin: 10px;
         z-index: -1;
+        width: 100%;
+        height: 260%;
         /* Menempatkan lapisan pseudo-element di bawah konten utama */
     }
 
     #icon-menu {
         display: block;
-    }
-
-    .header {
-        position: relative;
     }
 
     .navbar {
