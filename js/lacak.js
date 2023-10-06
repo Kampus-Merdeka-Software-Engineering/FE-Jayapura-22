@@ -17,7 +17,7 @@ function lacak(event){
     const valueNamaBarang = inputNamaBarang.value;
     const valueNomorHP = inputnomorHP.value;
     const valueDestination = inputDestination.value;
-    const valueWeight = inputweight.value
+    const valueWeight = inputweight.value;
 
     fetch(`${BASE_URL}/input-data-tracking`,{
       method: "POST",
