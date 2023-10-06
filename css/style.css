@@ -18,7 +18,7 @@ body {
 
 body::before {
     content: '';
-    background-image: url('./img/Logo.png');
+    background-image: url('img/Logo.png');
     /* Gambar latar belakang yang sama dengan latar belakang utama */
     background-size: auto;
     background-repeat: no-repeat;
