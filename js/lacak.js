@@ -9,7 +9,7 @@ function handleClick(event){
 function lacak(event){
     const inputNama = document.querySelector("#nama");
     const inputNamaBarang = document.querySelector("#namaBarang");
-    const inputnomorHP = document.querySelector("#nomorhp");
+    const inputnomorHP = document.querySelector("#nomorHP");
     const inputDestination = document.querySelector("#destination");
     const inputweight = document.querySelector("weight");
     
