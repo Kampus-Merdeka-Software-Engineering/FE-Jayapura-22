@@ -1,4 +1,4 @@
-const BASE_URL = "be-jayapura-22-production.up.railway.app"
+const BASE_URL = "https://be-jayapura-22-production.up.railway.app/"
 
 function handleClick(event){
     const navbar = document.querySelector(".navbar");
@@ -8,18 +8,18 @@ function handleClick(event){
 
 function lacak(event){
     const inputNama = document.querySelector("#name");
-    const inputNamaBarang = document.querySelector("#namabarang");
-    const inputNoHP = document.querySelector("#nohp");
+    const inputNamaBarang = document.querySelector("#namaBarang");
+    const inputnomorHP = document.querySelector("#nomorhp");
     const inputDestination = document.querySelector("#destination");
     const inputweight = document.querySelector("weight");
     
     const valueNama = inputNama.value;
     const valueNamaBarang = inputNamaBarang.value;
-    const valueNomorHP = inputNoHP.value;
+    const valueNomorHP = inputnomorHP.value;
     const valueDestination = inputDestination.value;
     const valueWeight = inputweight.value
 
-    fetch(`${BASE_URL}/input-data-barang`,{
+    fetch(`${BASE_URL}/input-data-tracking`,{
       method: "POST",
       body: JSON.stringify ({
         nama: valueNama,
@@ -37,7 +37,7 @@ function lacak(event){
         );
       inputNama.value = "";
       inputNamaBarang.value = "";
-      inputNoHP.value = "";
+      inputnomorHP.value = "";
       inputDestination.value = "";
       inputweight.value = "";
     })
