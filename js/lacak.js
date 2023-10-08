@@ -1,4 +1,3 @@
- <!-- Coba -->
 const BASE_URL = "https://be-jayapura-22-production.up.railway.app"
 
 function handleClick(event){
@@ -59,11 +58,12 @@ function Tracking(event) {
           const info = document.querySelector (".info");
           info.innerHTML = `
             <ul>
-                <li>nama: ${Response.data.nama}</li>
-                <li>nama Barang: ${Response.data.namaBarang}</li>
-                <li>nomor Hp: ${Response.data.nomorHP}</li>
-                <li>destination: ${Response.data.destination}</li>
-                <li>weight: ${Response.data.weight}</li>
+                <br>
+                <li>Nama : ${Response.data.nama}</li>
+                <li>Nama Barang : ${Response.data.namaBarang}</li>
+                <li>Nomor Hp : ${Response.data.nomorHP}</li>
+                <li>Destination : ${Response.data.destination}</li>
+                <li>Weight : ${Response.data.weight}</li>
             </ul>
           `;
           
