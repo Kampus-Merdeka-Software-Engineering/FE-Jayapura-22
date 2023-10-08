@@ -1,4 +1,4 @@
-const BASE_URL = "https://be-jayapura-22-production.up.railway.app/"
+const BASE_URL = "https://be-jayapura-22-production.up.railway.app"
 
 function handleClick(event){
     const navbar = document.querySelector(".navbar");
