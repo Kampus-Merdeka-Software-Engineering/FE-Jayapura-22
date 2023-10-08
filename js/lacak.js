@@ -1,3 +1,4 @@
+ <!-- Coba -->
 const BASE_URL = "https://be-jayapura-22-production.up.railway.app"
 
 function handleClick(event){
