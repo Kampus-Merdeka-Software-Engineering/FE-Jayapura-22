@@ -11,7 +11,7 @@ function lacak(event){
     const inputNamaBarang = document.querySelector("#namaBarang");
     const inputnomorHP = document.querySelector("#nomorHP");
     const inputDestination = document.querySelector("#destination");
-    const inputweight = document.querySelector("weight");
+    const inputweight = document.querySelector("#weight");
     
     const valueNama = inputNama.value;
     const valueNamaBarang = inputNamaBarang.value;
