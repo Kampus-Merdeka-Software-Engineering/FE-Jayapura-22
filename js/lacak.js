@@ -21,19 +21,20 @@ function lacak(event){
 
     fetch(`${BASE_URL}/input-data-tracking`,{
       method: "POST",
+      headers:{'Content-Type':'application/json'},
       body: JSON.stringify ({
         nama: valueNama,
-        nomorBarang: valueNamaBarang,
-        nomorHp: valueNomorHP,
+        namaBarang: valueNamaBarang,
+        nomorHP: valueNomorHP,
         destination: valueDestination,
         weight: valueWeight,
       }), 
 
     })
     .then((Response) => Response.json())
-    .then((Response) => {
+    .then((response) => {
       window.alert(
-        `Berhasil menyimpan data, nomor tracking anda ${response.nomorTracking}`
+        `Berhasil menyimpan data, nomor tracking anda ${response.trackingNumber}`
         );
       inputNama.value = "";
       inputNamaBarang.value = "";
@@ -41,16 +42,16 @@ function lacak(event){
       inputDestination.value = "";
       inputweight.value = "";
     })
-    .catch.error (error => {
+    .catch(error => {
         console.error(error);
 
     });
 }
 
-function tracking(event) {
+function Tracking(event) {
     const inputTrackinNumber = document.querySelector("#tracking-number")
     const value = inputTrackinNumber.value
-    fetch('$BASE_URL)/cek-shipping/${value}')
+    fetch(`${BASE_URL}/tracking-shipping/${value}`)
         .then((Response) => Response.json())
         .then((Response) => {
           inputTrackinNumber.value; "";
@@ -59,14 +60,14 @@ function tracking(event) {
             <ul>
                 <li>nama: ${Response.data.nama}</li>
                 <li>nama Barang: ${Response.data.namaBarang}</li>
-                <li>nomor Hp: ${Response.data.nomorHp}</li>
+                <li>nomor Hp: ${Response.data.nomorHP}</li>
                 <li>destination: ${Response.data.destination}</li>
                 <li>weight: ${Response.data.weight}</li>
             </ul>
           `;
           
     })
-    .catch.error (error => {
+    .catch(error => {
         console.error(error);
     });
 
