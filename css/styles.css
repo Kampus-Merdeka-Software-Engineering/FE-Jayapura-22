@@ -241,10 +241,15 @@ body {
     z-index: 1;
 }
 
+.btn:hover{
+    background-color: #0056b3;
+}
+
 
 .features {
     text-align: center;
     padding: 20px 0;
+    margin-top: 35%;
 }
 
 .feature {
@@ -314,53 +319,6 @@ body {
     text-decoration: underline;
 }
 
-/* Style kotak pencarian */
-.search-box {
-    text-align: center;
-    /* Pusatkan elemen dalam kotak pencarian */
-    margin-top: 520px;
-}
-
-.search-box input[type="text"] {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 4px solid #ccc;
-    border-radius: 25px;
-    /* Buat sudut kotak lebih melengkung */
-    font-size: 16px;
-    width: 100%;
-    max-width: 700px;
-    /* Lebar input sesuai kebutuhan */
-    outline: none;
-    /* Hilangkan garis focus saat input aktif */
-    
-
-}
-
-.search-box button {
-    background-color: #1E90FF;
-    border: none;
-    border-radius: 25px;
-    /* Buat sudut tombol pencarian lebih melengkung */
-    color: #fff;
-    cursor: pointer;
-    padding: 10px 40px;
-    margin-left: 10px;
-    /* Berikan jarak antara input dan tombol */
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-    /* Animasi perubahan warna latar belakang tombol saat dihover */
-}
-
-.search-box button:hover {
-    background-color: #0056b3;
-    /* Warna tombol saat dihover */
-}
-
-/* Style ikon pencarian (gunakan font-awesome) */
-.search-box i.fa-search {
-    font-size: 18px;
-}
 
 p {
     margin-top: 15px;
@@ -379,11 +337,11 @@ main {
     align-items: center;
     max-width: 900px;
     margin: 0px auto;
-    margin-top: 200px;
+    margin-top: 10px;
     padding: 50px;
     background-color: #fff;
     box-shadow: 0px 0px 10px rgba(17, 132, 239, 0.839);
-    background: rgba(4, 18, 29, 0.5);
+    background: rgba(0, 145, 255, 0.5);
     border-radius: 30px;
 }
 
@@ -428,62 +386,6 @@ label {
 
 
 
-button[type="submits"] {
-    background-color: #1E90FF;
-    color: #fff;
-    padding: 10px 30px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0000CD;
-}
-
-/* Style untuk elemen <select> */
-select#destination {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 25px;
-    font-size: 16px;
-    appearance: none;
-    /* Menghilangkan default styling pada beberapa browser */
-    background-color: #fff;
-    /* Warna latar belakang */
-}
-
-/* Style untuk tampilan ketika elemen <select> terbuka */
-select#destination:focus {
-    outline: none;
-    border-color: #007bff;
-    /* Warna border saat terfokus */
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-    /* Efek shadow saat terfokus */
-}
-
-/* Style untuk panah dropdown */
-select#destination::-ms-expand {
-    display: none;
-    /* Menghilangkan panah dropdown pada IE/Edge */
-}
-
-/* Style untuk pilihan (options) dalam elemen <select> */
-select#destination option {
-    padding: 10px;
-    font-size: 16px;
-    background-color: #fff;
-}
-
-/* Style untuk ketika pilihan (options) dipilih */
-select#destination option:checked {
-    background-color: #007bff;
-    /* Warna latar belakang saat dipilih */
-    color: #fff;
-    /* Warna teks saat dipilih */
-}
 
 
 
@@ -547,6 +449,7 @@ select#destination option:checked {
 
 /* Responsive design */
 @media screen and (max-width: 768px) {
+
     #icon-menu {
         display: block;
     }
@@ -579,40 +482,6 @@ select#destination option:checked {
     .hero h1 {
         font-size: 20px;
     }
-    .search-box {
-        text-align: center;
-        /* Pusatkan elemen dalam kotak pencarian */
-        margin-top: 50px;
-    }
-    .search-box input[type="text"] {
-        padding: 5px;
-        margin-bottom: 10px;
-        border: 4px solid #ccc;
-        border-radius: 25px;
-        /* Buat sudut kotak lebih melengkung */
-        font-size: 16px;
-        width: 100%;
-        max-width: 180px;
-        /* Lebar input sesuai kebutuhan */
-        outline: none;
-        /* Hilangkan garis focus saat input aktif */
-        
-    
-    }
-    .search-box button {
-        background-color: #1E90FF;
-        border: none;
-        border-radius: 25px;
-        /* Buat sudut tombol pencarian lebih melengkung */
-        color: #fff;
-        cursor: pointer;
-        padding: 8px 25px;
-        margin-left: 10px;
-        /* Berikan jarak antara input dan tombol */
-        font-size: 16px;
-        transition: background-color 0.3s ease;
-        /* Animasi perubahan warna latar belakang tombol saat dihover */
-    }
     .contact p {
         font-size: 14px;
         margin-bottom: 40px;
@@ -640,6 +509,7 @@ select#destination option:checked {
         align-items: center;
         z-index: 1;
     }
+    
     .contact {
         background-color: #1E90FF;
         /* Warna latar belakang contact section */
@@ -670,6 +540,15 @@ select#destination option:checked {
         /* Ubah lebar sesuai yang Anda inginkan */
         height: 30px;
         /* Biarkan tinggi mengikuti proporsi asli gambar */
+    }
+    .features {
+        margin-top: 20%;
+    }
+    .faq-item h2 {
+        font-size: 1.2rem;
+    }
+    .faq-item p {
+        font-size: 1rem;
     }
   
 }
@@ -743,39 +622,18 @@ select#destination option:checked {
         height: 50px;
         /* Biarkan tinggi mengikuti proporsi asli gambar */
     }
-
-    .search-box {
-        text-align: center;
-        /* Pusatkan elemen dalam kotak pencarian */
-        margin-top: 180px;
+    main {
+        align-items: center;
+        max-width: 300px;
+        margin: 0px auto;
+        box-shadow: 0px 0px 10px rgba(17, 132, 239, 0.839);
+        background: rgba(0, 145, 255, 0.5);
+        border-radius: 30px;
     }
-    .search-box input[type="text"] {
-        padding: 5px;
-        margin-bottom: 10px;
-        border: 4px solid #ccc;
-        border-radius: 25px;
-        /* Buat sudut kotak lebih melengkung */
-        font-size: 16px;
-        width: 100%;
-        max-width: 580px;
-        /* Lebar input sesuai kebutuhan */
-        outline: none;
-        /* Hilangkan garis focus saat input aktif */
-        
-    
+    .faq-item h2 {
+        font-size: 1.2rem;
     }
-    .search-box button {
-        background-color: #1E90FF;
-        border: none;
-        border-radius: 25px;
-        /* Buat sudut tombol pencarian lebih melengkung */
-        color: #fff;
-        cursor: pointer;
-        padding: 8px 35px;
-        margin-left: 10px;
-        /* Berikan jarak antara input dan tombol */
-        font-size: 16px;
-        transition: background-color 0.3s ease;
-        /* Animasi perubahan warna latar belakang tombol saat dihover */
+    .faq-item p {
+        font-size: 1rem;
     }
 }

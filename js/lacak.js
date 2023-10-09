@@ -19,6 +19,13 @@ function lacak(event){
     const valueDestination = inputDestination.value;
     const valueWeight = inputweight.value;
 
+    const form = document.getElementById("shipping-rate-form");
+    if (!form.checkValidity()) {
+        event.preventDefault();
+        alert("Please fill in all required fields !!");
+        return false;
+    }
+
     fetch(`${BASE_URL}/input-data-tracking`,{
       method: "POST",
       headers:{'Content-Type':'application/json'},
@@ -63,7 +70,7 @@ function Tracking(event) {
                 <li>Nama Barang : ${Response.data.namaBarang}</li>
                 <li>Nomor Hp : ${Response.data.nomorHP}</li>
                 <li>Destination : ${Response.data.destination}</li>
-                <li>Weight : ${Response.data.weight}</li>
+                <li>Weight : ${Response.data.weight} Kg</li>
             </ul>
           `;
           
@@ -74,8 +81,3 @@ function Tracking(event) {
 
 }
 
-function handleClick(event){
-    const navbar = document.querySelector(".navbar");
-    navbar.classList.toggle("showNavbar");
-    navbar.classList.toggle("hideNavbar");
-}
