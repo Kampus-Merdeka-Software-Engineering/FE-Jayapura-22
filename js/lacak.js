@@ -66,9 +66,9 @@ function Tracking(event) {
           info.innerHTML = `
             <ul>
                 
-                <li>Nama : ${Response.data.nama}</li>
-                <li>Nama Barang : ${Response.data.namaBarang}</li>
-                <li>Nomor Hp : ${Response.data.nomorHP}</li>
+                <li>Full name : ${Response.data.nama}</li>
+                <li>Mobile Phone Number : ${Response.data.namaBarang}</li>
+                <li>>Name products : ${Response.data.nomorHP}</li>
                 <li>Destination : ${Response.data.destination}</li>
                 <li>Weight : ${Response.data.weight} Kg</li>
             </ul>
