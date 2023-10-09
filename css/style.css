@@ -597,12 +597,28 @@ select#destination:focus {
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
     /* Efek shadow saat terfokus */
 }
+ul {
+    margin-top: 40px;
+    list-style-type: none;
+    padding: 20px 40px;
+    box-shadow: 0px 0px 10px rgba(17, 132, 239, 0.839);
+    background: rgba(0, 145, 255, 0.5);
+    border-radius: 20px;
+}
 
-
-
+ul li {
+    font-size: 18px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    
+}
 
 /* Responsive design */
 @media screen and (max-width: 768px) {
+    ul {
+        width: 140px;
+        margin-left: 50px;
+    }
     body::before {
         margin: 10px;
         z-index: -1;
@@ -777,6 +793,12 @@ select#destination:focus {
     .login a {
         font-size: 10px;
     }
+    ul li {
+        font-size: 12px;
+        color: black;
+        text-align: left; /* Untuk membuat teks rata kiri */
+    }
+    
 }
 
 @media screen and (max-width: 768px) {

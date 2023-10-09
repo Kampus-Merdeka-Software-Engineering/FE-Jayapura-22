@@ -65,7 +65,7 @@ function Tracking(event) {
           const info = document.querySelector (".info");
           info.innerHTML = `
             <ul>
-                <br>
+                
                 <li>Nama : ${Response.data.nama}</li>
                 <li>Nama Barang : ${Response.data.namaBarang}</li>
                 <li>Nomor Hp : ${Response.data.nomorHP}</li>
