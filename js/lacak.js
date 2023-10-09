@@ -67,8 +67,8 @@ function Tracking(event) {
             <ul>
                 
                 <li>Full name : ${Response.data.nama}</li>
-                <li>Mobile Phone Number : ${Response.data.namaBarang}</li>
-                <li>>Name products : ${Response.data.nomorHP}</li>
+                <li>Mobile Phone Number : ${Response.data.nomorHP}</li>
+                <li>Name products : ${Response.data.namaBarang}</li>
                 <li>Destination : ${Response.data.destination}</li>
                 <li>Weight : ${Response.data.weight} Kg</li>
             </ul>
