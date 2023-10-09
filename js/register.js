@@ -7,8 +7,6 @@ function handleClick(event) {
 const BASE_URL = "https://be-jayapura-22-production.up.railway.app";
 
 function register(event) {
-
-
     const inputFullname = document.querySelector("#fullname");
     const inputEmail = document.querySelector("#email");
     const inputPassword = document.querySelector("#password");
