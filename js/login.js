@@ -11,25 +11,47 @@ function togglePasswordVisibility() {
         passwordIcon.classList.remove("fa-unlock");
         passwordIcon.classList.add("fa-lock");
     }
-
-    function loginClicked() {
-        var emailInput = document.getElementById("emailInput").value;
-        var passwordInput = document.getElementById("passwordInput").value;
-
-        // Simple validation for email and password
-        if (emailInput === "" || passwordInput === "") {
-            alert("Email and password are required.");
-        } else if (emailInput === "user@example.com" && passwordInput === "password") {
-            alert("Login successful!"); // You can redirect to another page here
-        } else {
-            alert("Invalid email or password.");
-        }
-    }
 }
 
 
-function handleClick(event){
+function handleClick(event) {
     const navbar = document.querySelector(".navbar");
     navbar.classList.toggle("showNavbar");
     navbar.classList.toggle("hideNavbar");
+}
+
+var btn = document.getElementById("buttonLogin");
+var email = document.getElementById("email");
+var password = document.getElementById("password");
+
+btn.addEventListener("click", login);
+
+function login() {
+    fetch("https://be-jayapura-22-production.up.railway.app/login", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+            email: email.value,
+            password: password.value,
+        })
+    }) 
+    .then(function (response) {
+        if (response.ok) {
+            return response.json();
+        } else {
+            throw new Error("Login failed");
+        }
+    })
+    .then(function (data) {
+        // Handle the response data from the server here
+        // You can redirect to another page or display a success message
+        console.log("Login successful:", data);
+    })
+    .catch(function (error) {
+        // Handle any errors that occurred during the fetch
+        // You can display an error message to the user
+        console.error("Error:", error);
+    });
 }
