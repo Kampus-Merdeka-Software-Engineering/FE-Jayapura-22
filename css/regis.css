@@ -541,7 +541,7 @@ label {
         box-shadow: 0px 0px 25px 10px #1E90FF;
         padding: 60px;
         border-radius: 50px;
-        max-width: 160px;
+        max-width: 100px;
         /* Untuk mengatur tengah secara horizontal */
         margin-top: 50px;
         margin-bottom: 50px;
@@ -557,7 +557,8 @@ label {
     .form-group {
         color: black;
         margin-bottom: 5px;
-        text-align: left;
+        margin: 0px;
+
         font-size: 15px;
     }
 
@@ -674,5 +675,16 @@ label {
         /* Ubah lebar sesuai yang Anda inginkan */
         height: 50px;
         /* Biarkan tinggi mengikuti proporsi asli gambar */
+    }
+    .register-container {
+        background-color: rgba(255, 255, 255, 0.833);
+        /* Latar belakang transparan dengan nilai alpha 0.8 */
+        box-shadow: 0px 0px 25px 10px #1E90FF;
+        padding: 80px;
+        border-radius: 50px;
+        max-width: 260px;
+        /* Untuk mengatur tengah secara horizontal */
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 }
