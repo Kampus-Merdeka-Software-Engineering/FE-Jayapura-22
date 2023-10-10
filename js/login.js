@@ -24,7 +24,7 @@ const BASE_URL = "https://be-jayapura-22-production.up.railway.app";
 
 function login(event) {
     const inputEmail = document.querySelector("#email");
-    const inputPassword = document.querySelector("#password");
+    const inputPassword = document.querySelector("#passwordInput");
 
     const valueEmail = inputEmail.value;
     const valuePassword = inputPassword.value;

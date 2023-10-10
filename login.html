@@ -29,26 +29,23 @@
         </nav>
     </header>
 
-    <section class="login">
+    <div id="login-form" class="login-container">
         <h2>Login</h2>
-        <div id="login-form" class="box-login">
+        <div class="box-login">
             <i class="fas fa-envelope-open-text"></i>
             <input type="text" id="email" placeholder="Email">
         </div>
-
-        <div id="login-form" class="box-login">
+        <div class="box-login">
             <i class="fas fa-lock"></i>
-            <input type="password" id="password" placeholder="Password" required>
+            <input type="password" id="passwordInput" placeholder="Password" required>
             <i class="fas fa-eye" id="passwordIcon" onclick="togglePasswordVisibility()"></i>
         </div>
-
-        <button type="buttom" id="login" oneclik="login(event)">Login</button>
-       
+        <button type="button" id="login" onclick="login(event)">Login</button>
         <div class="bottom">
             <p>Don't have an account yet ? <a href="./register.html">Register</a></p>
         </div>
-
-        <script src="./js/login.js"></script>
+    </div>
+    <script src="./js/login.js"></script>
     </section>
 </body>
 
