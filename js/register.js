@@ -20,7 +20,7 @@ function register(event) {
         alert("Please fill in all required fields!!");
         return false;
     }
-
+    console.log(valueFullname);
     fetch(`${BASE_URL}/register`, {
         method: "POST",
         headers: {

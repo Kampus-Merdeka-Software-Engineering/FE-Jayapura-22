@@ -20,38 +20,44 @@ function handleClick(event) {
     navbar.classList.toggle("hideNavbar");
 }
 
-var btn = document.getElementById("buttonLogin");
-var email = document.getElementById("email");
-var password = document.getElementById("password");
+const BASE_URL = "https://be-jayapura-22-production.up.railway.app";
 
-btn.addEventListener("click", login);
+function login(event) {
+    const inputEmail = document.querySelector("#email");
+    const inputPassword = document.querySelector("#password");
 
-function login() {
-    fetch("https://be-jayapura-22-production.up.railway.app/login", {
+    const valueEmail = inputEmail.value;
+    const valuePassword = inputPassword.value;
+
+    const form = document.getElementById("login-form");
+    if (!form.checkValidity()) {
+        alert("Please fill in all required fields!!");
+        return false;
+    }
+    
+    fetch(`${BASE_URL}/login`, {
         method: "POST",
         headers: {
-            "Content-Type": "application/json",
+            'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            email: email.value,
-            password: password.value,
+            email: valueEmail,
+            password: valuePassword
         })
-    }) 
-    .then(function (response) {
-        if (response.ok) {
-            return response.json();
-        } else {
-            throw new Error("Login failed");
+    })
+    .then((response) => {
+        if (!response.ok) {
+            throw new Error(`Server returned ${response.status} - ${response.statusText}`);
         }
+        return response.json();
     })
-    .then(function (data) {
-        // Handle the response data from the server here
-        // You can redirect to another page or display a success message
-        console.log("Login successful:", data);
+    .then((data) => {
+        alert(`Success login`);
+        inputEmail.value = "";
+        inputPassword.value = "";
     })
-    .catch(function (error) {
-        // Handle any errors that occurred during the fetch
-        // You can display an error message to the user
-        console.error("Error:", error);
+    .catch(error => {
+        console.error(error);
+        alert("An error occurred while processing your request. Please try again later.");
     });
 }
