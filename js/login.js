@@ -1,3 +1,9 @@
+function handleClick(event) {
+    const navbar = document.querySelector(".navbar");
+    navbar.classList.toggle("showNavbar");
+    navbar.classList.toggle("hideNavbar");
+}
+
 function togglePasswordVisibility() {
     var passwordInput = document.getElementById("passwordInput");
     var passwordIcon = document.getElementById("passwordIcon");
@@ -11,13 +17,6 @@ function togglePasswordVisibility() {
         passwordIcon.classList.remove("fa-unlock");
         passwordIcon.classList.add("fa-lock");
     }
-}
-
-
-function handleClick(event) {
-    const navbar = document.querySelector(".navbar");
-    navbar.classList.toggle("showNavbar");
-    navbar.classList.toggle("hideNavbar");
 }
 
 const BASE_URL = "https://be-jayapura-22-production.up.railway.app";
